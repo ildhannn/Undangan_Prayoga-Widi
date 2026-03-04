@@ -179,21 +179,21 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
           <>
             {/* Slide 1 */}
             <div
-              className={`text-white h-screen flex pt-12 p-5 px-12 snap-start `}
+              className={`text-[#323232] h-screen flex pt-20 p-5 px-12 snap-start `}
               style={{
-                backgroundImage: `url(/foto_1.png)`,
+                backgroundImage: `url(/ayat_quran.png)`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
             >
               <div
                 ref={slide1Ref}
-                className={` ${isSlide1InView ? "active" : ""}  fadeInMove`}
+                className={` ${isSlide1InView ? "active" : ""}  fadeInMove mt-20 pt-16`}
               >
-                <h1 className="text-xl md:text-2xl font-ovo tracking-wide text-white uppercase">
+                <h1 className="text-xl font-ovo tracking-wide text-[#323232] uppercase">
                   {config.bibleVerse}
                 </h1>
-                <p className="text-sm mt-5 font-legan">
+                <p className="md:text-2xl mt-5 font-legan ">
                   {config.bibleVerseContent}
                 </p>
                 <p className="text-sm mt-5 font-legan">
@@ -221,7 +221,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 <h1 className="text-xl md:text-3xl text-white  font-ovo">
                   {config.groom}
                 </h1>
-                <h3 className="font-thesignature text-2xl">About {config.groomNickName},</h3>
+                <h3 className="font-thesignature text-2xl">({config.groomNickName}),</h3>
                 <h5 className="text-sm mt-5 font-legan text-[#ffffff]">
                   {config.groomBio}
                 </h5>
@@ -252,7 +252,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 <h1 className="text-xl md:text-3xl text-white  font-ovo">
                   {config.bride}
                 </h1>
-                <h3 className="font-thesignature text-2xl">About {config.brideNickName},</h3>
+                <h3 className="font-thesignature text-2xl">({config.brideNickName}),</h3>
                 <p className="text-sm mt-5 font-legan text-[#ffffff]">
                   {config.brideBio}
                 </p>
@@ -428,7 +428,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
             <div
               className="snap-start text-white h-screen flex flex-col items-center justify-center pb-16 px-12 "
               style={{
-                backgroundImage: `url(/foto_2.png)`,
+                backgroundImage: `url(/slide_foto.jpeg)`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -512,6 +512,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                     <p className="text-3xl font-thesignature text-white/80 ">
                       {config.prewedding.detail}
                     </p>
+                    <p className="text-6xl mt-5 font-wonder">{config.coupleNames}</p>
                   </div>
                 </div>
               </div>)}
