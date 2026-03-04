@@ -459,16 +459,22 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                     className="mySwiper"
                   >
                     <SwiperSlide>
-                      <img src="./slide_1.jpeg" />
+                      <img src="./slide_11.png" />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src="./slide_2.jpeg" />
+                      <img src="./slide_22.png" />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src="./slide_3.jpeg" />
+                      <img src="./slide_33.png" />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src="./slide_4.jpeg" />
+                      <img src="./slide_44.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src="./slide_55.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src="./slide_66.png" />
                     </SwiperSlide>
                     <SwiperSlide>
                       <img src="./slide_5.jpeg" />
