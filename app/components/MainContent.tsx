@@ -207,7 +207,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
             <div
               className={`text-white h-screen flex items-end pb-16 px-12 snap-start `}
               style={{
-                backgroundImage: `url(/pria.jpeg)`,
+                backgroundImage: `url(/laki.png)`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -215,10 +215,10 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
               {/* Display the content when the button is clicked */}
               <div
                 ref={slide2Ref}
-                className={`fadeInMove ${isSlide2InView ? "active" : ""}  `}
+                className={`fadeInMove ${isSlide2InView ? "active" : ""}`}
               >
-                <p className="font-legan text-sm my-2 text-black">Mempelai Pria</p>
-                <h1 className="text-xl md:text-3xl text-white  font-ovo">
+                <p className="font-legan text-sm text-white pt-5">Mempelai Pria</p>
+                <h1 className="text-xl md:text-3xl text-white font-ovo">
                   {config.groom}
                 </h1>
                 <h3 className="font-thesignature text-2xl">({config.groomNickName}),</h3>
@@ -239,7 +239,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
             <div
               className="snap-start  text-white h-screen flex items-end pb-16 px-12 "
               style={{
-                backgroundImage: `url(/wanita.jpeg)`,
+                backgroundImage: `url(/perempuan.png)`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -497,21 +497,31 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                   ref={slide8Ref}
                   className={`${isSlide8InView ? "active" : ""} fadeInMove `}
                 >
-                  <h1 className="text-3xl text-white  font-ovo text-center uppercase">
+                  <h1 className="text-3xl text-white font-ovo text-center uppercase">
                     Our Memories Together
                   </h1>
                   <div
                     className="mt-10 mx-auto w-full max-w-2xl relative"
-                    style={{ paddingBottom: "56.25%", height: 0 }}
+                    style={{ height: "450px", width: "100%" }}
                   >
-                    <iframe
+                    {/* <iframe
                       className="absolute top-0 left-0 w-full h-full"
                       src={`https://www.youtube.com/embed/${config.prewedding.link}?autoplay=1&mute=1&loop=1`}
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       referrerPolicy="strict-origin-when-cross-origin"
                       allowFullScreen
-                    ></iframe>
+                    ></iframe> */}
+                    {/* video is absolutely positioned inside a responsive wrapper.  
+                        width/height attributes were being overridden by the container, so
+                        we apply w-full h-full (or an explicit style) instead.  */}
+                    <video
+                      className="absolute top-0 left-0 w-full h-full object-cover"
+                      autoPlay
+                      loop
+                    >
+                      <source src="/video.mp4" type="video/mp4" />
+                    </video>
                   </div>
 
                   <div className="-mt-12 w-72 transform skew-x-6 drop-shadow">
@@ -667,7 +677,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
             <div
               className="snap-start text-white h-screen flex flex-col justify-end pt-16 pb-16 px-12 "
               style={{
-                backgroundImage: `url(/foto_1.png)`,
+                backgroundImage: `url(/foto_11.png)`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
