@@ -221,7 +221,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 <h1 className="text-xl md:text-3xl text-white  font-ovo">
                   {config.groom}
                 </h1>
-                <h3 className="font-thesignature text-2xl">About {config.groomNickName},</h3>
+                <h3 className="font-thesignature text-2xl">({config.groomNickName}),</h3>
                 <h5 className="text-sm mt-5 font-legan text-[#ffffff]">
                   {config.groomBio}
                 </h5>
@@ -252,7 +252,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 <h1 className="text-xl md:text-3xl text-white  font-ovo">
                   {config.bride}
                 </h1>
-                <h3 className="font-thesignature text-2xl">About {config.brideNickName},</h3>
+                <h3 className="font-thesignature text-2xl">({config.brideNickName}),</h3>
                 <p className="text-sm mt-5 font-legan text-[#ffffff]">
                   {config.brideBio}
                 </p>
@@ -512,6 +512,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                     <p className="text-3xl font-thesignature text-white/80 ">
                       {config.prewedding.detail}
                     </p>
+                    <p className="text-6xl mt-5 font-wonder">{config.coupleNames}</p>
                   </div>
                 </div>
               </div>)}
