@@ -188,7 +188,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
             >
               <div
                 ref={slide1Ref}
-                className={` ${isSlide1InView ? "active" : ""}  fadeInMove mt-20 pt-16`}
+                className={` ${isSlide1InView ? "active" : ""} fadeInMove flex flex-col items-center justify-center h-full`}
               >
                 <h1 className="text-xl font-ovo tracking-wide text-[#323232] uppercase">
                   {config.bibleVerse}
@@ -492,7 +492,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
               >
                 <div
                   ref={slide8Ref}
-                  className={`${isSlide8InView ? "active" : ""} fadeInMove `}
+                  className={`${isSlide8InView ? "active" : ""} fadeInMove flex flex-col items-center justify-center h-full`}
                 >
                   <h1 className="text-3xl text-white font-ovo text-center uppercase">
                     Our Memories Together
