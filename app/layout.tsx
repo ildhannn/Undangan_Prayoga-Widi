@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import "./mastercard.css";
 import { config } from "@/lib/config";
+import { Analytics } from "@vercel/analytics/next"
 
 const legan = localFont({
   src: "./fonts/Legan.woff",
@@ -46,6 +47,7 @@ export default function RootLayout({
         className={`bg-[#0a0a0a]  ${ovo.variable} ${thesignature.variable} ${wonder.variable} ${legan.variable}  antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
