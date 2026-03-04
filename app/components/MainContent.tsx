@@ -519,6 +519,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                       className="absolute top-0 left-0 w-full h-full object-cover"
                       autoPlay
                       loop
+                      muted
                     >
                       <source src="/video.mp4" type="video/mp4" />
                     </video>
