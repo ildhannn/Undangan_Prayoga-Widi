@@ -406,7 +406,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
 
             {/* Slide 6 */}
             <div
-              className="snap-start  text-white h-screen flex flex-col items-center justify-end pb-16 px-12 "
+              className="snap-start text-white h-screen flex flex-col items-center justify-end pb-10 px-12 "
               style={{
                 backgroundImage: `url(/foto_4.png)`,
                 backgroundSize: "cover",
@@ -416,9 +416,9 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
               <div
                 ref={slide6Ref}
                 className={` ${isSlide6InView ? "active" : ""
-                  }  fadeInMove flex items-center flex-col`}
+                  }  fadeInMove flex items-center flex-col pb-10`}
               >
-                <h1 className="text-2xl text-center text-white  font-ovo">
+                <h1 className="text-2xl text-center text-white font-ovo">
                   Waktu Menuju Hari Bahagia
                 </h1>
                 {/* Countdown Timer */}
