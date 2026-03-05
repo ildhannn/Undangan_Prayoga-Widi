@@ -179,7 +179,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
           <>
             {/* Slide 1 */}
             <div
-              className={`text-[#323232] h-screen flex pt-20 p-5 px-12 snap-start `}
+              className={`text-[#323232] h-screen flex px-12 snap-start `}
               style={{
                 backgroundImage: `url(/ayat_quran.png)`,
                 backgroundSize: "cover",
