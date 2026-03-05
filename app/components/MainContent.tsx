@@ -268,14 +268,16 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
 
             {/* Slide 4 */}
             <div
-              className="snap-start  text-white h-screen pt-8 flex px-12 "
+              className="snap-start text-white h-screen pt-8 flex px-12 relative"
               style={{
                 backgroundImage: `url(/foto_2.png)`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
             >
-              <div>
+              {/* dark overlay for background opacity */}
+              <div className="absolute inset-0 bg-black opacity-30 pointer-events-none" />
+              <div className="relative z-10">
                 <h1
                   ref={slide4Ref}
                   className={`text-xl md:text-5xl text-white font-ovo fadeInMove ${isSlide4InView ? " active" : ""
