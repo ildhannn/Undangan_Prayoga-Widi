@@ -546,7 +546,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 className={`${isSlide9InView ? "active" : ""} fadeInMove`}
               >
                 <h1 className="text-3xl text-white font-ovo text-center uppercase">
-                  Kehadiran Anda Dan Harapan Anda
+                  Kehadiran Anda Dan Doa Terbaik Untuk Kami
                 </h1>
                 <p className="text-sm font-legan text-white/80 text-center">
                 {config.rsvp.detail}
@@ -571,7 +571,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 className={`${isSlide10InView ? "active" : ""} fadeInMove`}
               >
                 <h1 className="text-3xl text-white font-ovo text-center uppercase">
-                  Harapan
+                  Ucapan Dan Doa Terbaik Untuk Kami
                 </h1>
                 <WishesList />
               </div>
