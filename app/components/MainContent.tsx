@@ -461,9 +461,6 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                     className="mySwiper"
                   >
                     <SwiperSlide>
-                      <img src="./slide_11.png" />
-                    </SwiperSlide>
-                    <SwiperSlide>
                       <img src="./slide_22.png" />
                     </SwiperSlide>
                     <SwiperSlide>
