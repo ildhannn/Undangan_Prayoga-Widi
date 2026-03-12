@@ -372,7 +372,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                       Akad Nikah <br /> {config.holyMatrimony.time}
                     </h3>
                     <p className="text-sm text-center  font-legan text-white">
-                      {config.holyMatrimony.place} <br /> {config.holyMatrimony.place_details}
+                      {config.holyMatrimony.place} <br /> {config.holyMatrimony.place_details} <br /> ( Masuk ke gang Bah Neneng RT/RW : 05,06 / 03 )
                     </p>
                     <Link
                       href={config.holyMatrimony.googleMapsLink}
@@ -390,7 +390,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                       Resepsi <br /> {config.weddingReception.time}
                     </h3>
                     <p className="text-sm text-center  font-legan text-white">
-                      {config.weddingReception.place} <br /> {config.weddingReception.place_details}
+                      {config.weddingReception.place} <br /> {config.weddingReception.place_details} <br /> ( Masuk ke gang Bah Neneng RT/RW : 05,06 / 03 )
                     </p>
                     <Link
                       href={config.weddingReception.googleMapsLink}
