@@ -179,21 +179,21 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
           <>
             {/* Slide 1 */}
             <div
-              className={`text-white h-screen flex pt-12 p-5 px-12 snap-start `}
+              className={`text-[#323232] h-screen flex px-12 snap-start `}
               style={{
-                backgroundImage: `url(/foto_1.png)`,
+                backgroundImage: `url(/ayat_quran.png)`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
             >
               <div
                 ref={slide1Ref}
-                className={` ${isSlide1InView ? "active" : ""}  fadeInMove`}
+                className={` ${isSlide1InView ? "active" : ""} fadeInMove flex flex-col items-center justify-center h-full`}
               >
-                <h1 className="text-xl md:text-2xl font-ovo tracking-wide text-white uppercase">
+                <h1 className="text-xl font-ovo tracking-wide text-[#323232] uppercase">
                   {config.bibleVerse}
                 </h1>
-                <p className="text-sm mt-5 font-legan">
+                <p className="md:text-2xl mt-5 font-legan ">
                   {config.bibleVerseContent}
                 </p>
                 <p className="text-sm mt-5 font-legan">
@@ -207,7 +207,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
             <div
               className={`text-white h-screen flex items-end pb-16 px-12 snap-start `}
               style={{
-                backgroundImage: `url(/pria.jpeg)`,
+                backgroundImage: `url(/laki.png)`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -215,10 +215,10 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
               {/* Display the content when the button is clicked */}
               <div
                 ref={slide2Ref}
-                className={`fadeInMove ${isSlide2InView ? "active" : ""}  `}
+                className={`fadeInMove ${isSlide2InView ? "active" : ""}`}
               >
-                <p className="font-legan text-sm my-2 text-black">Mempelai Pria</p>
-                <h1 className="text-xl md:text-3xl text-white  font-ovo">
+                <p className="font-legan text-sm text-white pt-5">Mempelai Pria</p>
+                <h1 className="text-xl md:text-3xl text-white font-ovo">
                   {config.groom}
                 </h1>
                 <h3 className="font-thesignature text-2xl">({config.groomNickName}),</h3>
@@ -239,7 +239,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
             <div
               className="snap-start  text-white h-screen flex items-end pb-16 px-12 "
               style={{
-                backgroundImage: `url(/wanita.jpeg)`,
+                backgroundImage: `url(/perempuan.png)`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -268,14 +268,16 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
 
             {/* Slide 4 */}
             <div
-              className="snap-start  text-white h-screen pt-8 flex px-12 "
+              className="snap-start text-white h-screen pt-8 flex px-12 relative"
               style={{
                 backgroundImage: `url(/foto_2.png)`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
             >
-              <div>
+              {/* dark overlay for background opacity */}
+              <div className="absolute inset-0 bg-black opacity-30 pointer-events-none" />
+              <div className="relative z-10">
                 <h1
                   ref={slide4Ref}
                   className={`text-xl md:text-5xl text-white font-ovo fadeInMove ${isSlide4InView ? " active" : ""
@@ -370,7 +372,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                       Akad Nikah <br /> {config.holyMatrimony.time}
                     </h3>
                     <p className="text-sm text-center  font-legan text-white">
-                      {config.holyMatrimony.place} <br /> {config.holyMatrimony.place_details}
+                      {config.holyMatrimony.place} <br /> {config.holyMatrimony.place_details} <br /> ( Masuk ke gang Bah Neneng RT/RW : 05,06 / 03 )
                     </p>
                     <Link
                       href={config.holyMatrimony.googleMapsLink}
@@ -388,7 +390,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                       Resepsi <br /> {config.weddingReception.time}
                     </h3>
                     <p className="text-sm text-center  font-legan text-white">
-                      {config.weddingReception.place} <br /> {config.weddingReception.place_details}
+                      {config.weddingReception.place} <br /> {config.weddingReception.place_details} <br /> ( Masuk ke gang Bah Neneng RT/RW : 05,06 / 03 )
                     </p>
                     <Link
                       href={config.weddingReception.googleMapsLink}
@@ -404,7 +406,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
 
             {/* Slide 6 */}
             <div
-              className="snap-start  text-white h-screen flex flex-col items-center justify-end pb-16 px-12 "
+              className="snap-start text-white h-screen flex flex-col items-center justify-end pb-10 px-12 "
               style={{
                 backgroundImage: `url(/foto_4.png)`,
                 backgroundSize: "cover",
@@ -414,9 +416,9 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
               <div
                 ref={slide6Ref}
                 className={` ${isSlide6InView ? "active" : ""
-                  }  fadeInMove flex items-center flex-col`}
+                  }  fadeInMove flex items-center flex-col pb-10`}
               >
-                <h1 className="text-2xl text-center text-white  font-ovo">
+                <h1 className="text-2xl text-center text-white font-ovo">
                   Waktu Menuju Hari Bahagia
                 </h1>
                 {/* Countdown Timer */}
@@ -428,7 +430,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
             <div
               className="snap-start text-white h-screen flex flex-col items-center justify-center pb-16 px-12 "
               style={{
-                backgroundImage: `url(/foto_2.png)`,
+                backgroundImage: `url(/foto_revisi.jpeg)`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -459,19 +461,19 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                     className="mySwiper"
                   >
                     <SwiperSlide>
-                      <img src="./slide_1.jpeg" />
+                      <img src="./slide_22.png" />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src="./slide_2.jpeg" />
+                      <img src="./slide_33.png" />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src="./slide_3.jpeg" />
+                      <img src="./slide_44.png" />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src="./slide_4.jpeg" />
+                      <img src="./slide_55.png" />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src="./slide_5.jpeg" />
+                      <img src="./slide_66.png" />
                     </SwiperSlide>
                   </Swiper>
               </div>
@@ -489,23 +491,34 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
               >
                 <div
                   ref={slide8Ref}
-                  className={`${isSlide8InView ? "active" : ""} fadeInMove `}
+                  className={`${isSlide8InView ? "active" : ""} fadeInMove flex flex-col items-center justify-center h-full`}
                 >
-                  <h1 className="text-3xl text-white  font-ovo text-center uppercase">
+                  <h1 className="text-3xl text-white font-ovo text-center uppercase">
                     Our Memories Together
                   </h1>
                   <div
                     className="mt-10 mx-auto w-full max-w-2xl relative"
-                    style={{ paddingBottom: "56.25%", height: 0 }}
+                    style={{ height: "450px", width: "100%" }}
                   >
-                    <iframe
+                    {/* <iframe
                       className="absolute top-0 left-0 w-full h-full"
                       src={`https://www.youtube.com/embed/${config.prewedding.link}?autoplay=1&mute=1&loop=1`}
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       referrerPolicy="strict-origin-when-cross-origin"
                       allowFullScreen
-                    ></iframe>
+                    ></iframe> */}
+                    {/* video is absolutely positioned inside a responsive wrapper.  
+                        width/height attributes were being overridden by the container, so
+                        we apply w-full h-full (or an explicit style) instead.  */}
+                    <video
+                      className="absolute top-0 left-0 w-full h-full object-cover"
+                      autoPlay
+                      loop
+                      muted
+                    >
+                      <source src="/video.mp4" type="video/mp4" />
+                    </video>
                   </div>
 
                   <div className="-mt-12 w-72 transform skew-x-6 drop-shadow">
@@ -532,7 +545,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 className={`${isSlide9InView ? "active" : ""} fadeInMove`}
               >
                 <h1 className="text-3xl text-white font-ovo text-center uppercase">
-                  Kehadiran Anda Dan Harapan Anda
+                  Kehadiran Anda Dan Doa Terbaik Untuk Kami
                 </h1>
                 <p className="text-sm font-legan text-white/80 text-center">
                 {config.rsvp.detail}
@@ -557,7 +570,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 className={`${isSlide10InView ? "active" : ""} fadeInMove`}
               >
                 <h1 className="text-3xl text-white font-ovo text-center uppercase">
-                  Harapan
+                  Ucapan Dan Doa Terbaik Untuk Kami
                 </h1>
                 <WishesList />
               </div>
@@ -661,7 +674,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
             <div
               className="snap-start text-white h-screen flex flex-col justify-end pt-16 pb-16 px-12 "
               style={{
-                backgroundImage: `url(/foto_1.png)`,
+                backgroundImage: `url(/foto_11.png)`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}

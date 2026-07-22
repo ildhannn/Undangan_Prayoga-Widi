@@ -5,6 +5,7 @@ import "./globals.css";
 import "./mastercard.css";
 import { config } from "@/lib/config";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const legan = localFont({
   src: "./fonts/Legan.woff",
