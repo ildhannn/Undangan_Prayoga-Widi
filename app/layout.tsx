@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Ovo } from "@next/font/google";
 import localFont from "next/font/local";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import "./mastercard.css";
 import { config } from "@/lib/config";
